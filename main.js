@@ -88,14 +88,14 @@ function checkIfEquationHasDecimal(input, $equation){
 	var substrings = $equation.innerHTML.split(new RegExp(operators.join('|'), 'g'));
 	return (input == "." && substrings[substrings.length - 1].indexOf(".") < 0);
 }
-function checkIfOperator(string){
-	return (checkIfDivideOrMultiply(string) || string == "+" || string == minusOperator())
+function checkIfOperator(input){
+	return (checkIfDivideOrMultiply(input) || input == "+" || input == minusOperator())
 }
-function checkIfDivideOrMultiply(string){
-	return (string == divisionOperator() || string == multiplicationOperator())
+function checkIfDivideOrMultiply(input){
+	return (input == divisionOperator() || input == multiplicationOperator())
 }
-function checkIfOperatorODeciaml(string){
-	return checkIfOperator(string) || string == "."
+function checkIfOperatorODeciaml(input){
+	return checkIfOperator(input) || input == "."
 }
 function divisionOperator(){
 	return String.fromCharCode(247);

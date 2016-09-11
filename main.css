@@ -4,6 +4,13 @@ body{
 	font-size: 5em;
 	margin-bottom: 5%;
 	color: #666;
+	-webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
 }
 .text,
 .input,
@@ -22,7 +29,7 @@ body{
 .text{
 	min-height: 73px;
 	font-size: 0.8em;
-	vertical-align: center;
+	line-height: 73px;
 	border-radius: 5px;
 }
 .input,
