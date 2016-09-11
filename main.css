@@ -1,0 +1,64 @@
+body{
+	margin-top: 5%;
+	background-color: #87AAAE;
+	font-size: 5em;
+	margin-bottom: 5%;
+	color: #666;
+}
+.text,
+.input,
+.equals{
+	min-width: 25%;
+	cursor: pointer;
+	background-color: #DDECEF;
+	text-align: center;
+	border: 1px solid #B8B9BB;
+}
+.text:hover,
+.equals:hover,
+.input:hover{
+	background-color: #BFD9DA;
+}
+.text{
+	min-height: 73px;
+	font-size: 0.8em;
+	vertical-align: center;
+	border-radius: 5px;
+}
+.input,
+.equals{
+	position: relative;
+	float: left;
+}
+.display{
+	min-height: 120px;
+	background-color: #F6F6F6;
+}
+#operator{
+	font-size: 0.6em;
+	padding-left: 3%;
+	color: #B8B9BB;
+}
+#answer{
+	font-size: 0;
+}
+#equation{
+	padding-left: 3%;
+	overflow: scroll;
+}
+@media (min-width: 1000px){
+	.container {
+		width: 25%;
+	}
+}
+@media (min-width: 768px) and (max-width: 1000px){
+	.container {
+		width: 45%;
+	}
+}
+@media (min-width: 0px) and (max-width: 768px){
+	.container {
+		width: 80%;
+	}
+}
+
